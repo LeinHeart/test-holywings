@@ -18,6 +18,8 @@ class CalculateController extends GetxController {
         listNumber.add({i: "Tiga"});
       } else if (i % 5 == 0) {
         listNumber.add({i: 'Lima'});
+      } else {
+        listNumber.add({i: i.toString()});
       }
     }
     isLoading.value = false;
